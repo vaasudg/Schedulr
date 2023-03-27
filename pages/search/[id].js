@@ -50,7 +50,7 @@ export default function Search({ data, id, page }) {
   )
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const { id, page } = context.query
   const url = search(id, page)
   const response = await fetch(url)

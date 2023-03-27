@@ -48,7 +48,7 @@ export default function GenreTV({ data, id, name, page }) {
   )
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const { id, name, page } = context.query
   const url = getUrl(discoverTV, id, name, page)
   const response = await fetch(url)
