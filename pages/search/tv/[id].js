@@ -47,7 +47,7 @@ export default function SearchTV({ data, id, page }) {
   )
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const { id, page } = context.query
   const url = searchTv(id, page)
   const response = await fetch(url)
