@@ -3,7 +3,8 @@ const nextConfig = {
   dangerouslyAllowSVG: true,
   images: {
     loader: 'imgix',
-    domains: ['source.unsplash.com', 'image.tmdb.org'],
+    path: ['source.unsplash.com', 'image.tmdb.org'],
+    deviceSizes: [320, 420, 768, 1024, 1200],
   },
   reactStrictMode: true,
   experimental: {
