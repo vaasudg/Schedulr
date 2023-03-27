@@ -44,7 +44,7 @@ export default function GenreMovie({ data, id, name, page }) {
   )
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const { id, name, page } = context.query
   const url = getUrl(discoverMovie, id, name, page)
   const response = await fetch(url)

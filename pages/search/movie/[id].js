@@ -46,7 +46,7 @@ export default function SearchMovie({ data, id, page }) {
   )
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const { id, page } = context.query
   const url = searchMovie(id, page)
   const response = await fetch(url)
