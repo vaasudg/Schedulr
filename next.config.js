@@ -4,10 +4,6 @@ const nextConfig = {
   images: {
     domains: ['source.unsplash.com', 'image.tmdb.org'],
   },
-  i18n: {
-    locales: ['en'],
-    defaultLocale: 'en',
-  },
   reactStrictMode: true,
 }
 
